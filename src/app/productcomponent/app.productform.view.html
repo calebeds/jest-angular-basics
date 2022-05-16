@@ -19,13 +19,13 @@
               <div class="form-group">
                 <label>Category Name</label>
                 <select class="form-control" name="CategoryName" [(ngModel)]="product.categoryName">
-                  <option *ngfor="let c of categories" value="">{{c}}</option>
+                  <option *ngFor="let c of categories" value="">{{c}}</option>
                 </select>
               </div>
               <div class="form-group">
                 <label>Manufacturer</label>
                 <select class="form-control" name="Manufacturer" [(ngModel)]="product.manufacturer">
-                  <option *ngfor="let m of Manufacturers" value="">{{m}}</option>
+                  <option *ngFor="let m of manufacturers" value="">{{m}}</option>
                 </select>
               </div>
             </div>

@@ -8,7 +8,7 @@ import { Product} from './../app.product.model';
 import { ProductFormComponent } from './app.productform.component';
 
 // define the test suit
-describe('ProductFormComponent', () => {
+describe('component ProductFormComponent', () => {
   // dfefine the required objects fot test
   let component: ProductFormComponent;
   // defining the Component Fixture to monitor changed in component
