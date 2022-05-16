@@ -20,9 +20,10 @@ describe('ProductFormComponent', () => {
   // define the test env. so that the test will be
   // using Angular standard modules to execute test on component
 
-  beforeEach(() => {
+  beforeEach(async () => {
+    
     // defin the TestBedConfiguration
-    TestBed.configureTestingModule({
+    await TestBed.configureTestingModule({
       declarations: [ProductFormComponent],
       imports: [FormsModule]
     }).compileComponents(); // the component will be compiled

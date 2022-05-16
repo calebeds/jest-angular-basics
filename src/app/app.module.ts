@@ -10,7 +10,7 @@ import { ProductFormComponent } from './productcomponent/app.productform.compone
     AppComponent, ProductFormComponent
   ],
   imports: [
-    BrowserModule, FormsModule
+    BrowserModule, FormsModule, BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
