@@ -1,0 +1,50 @@
+<table>
+    <tbody><tr>
+      <td>
+        <div class="container">
+          <form name="frmProduct">
+            <div class="container">
+              <div class="form-group">
+                <label>Product Row Id</label>
+                <input class="form-control" name="ProductRowId" [(ngModel)]="product.productRowId" type="text" />
+              </div>
+              <div class="form-group">
+                <label>Product Id</label>
+                <input class="form-control" name="ProductId" [(ngModel)]="product.productId" type="text" />
+              </div>
+              <div class="form-group">
+                <label>Product Name</label>
+                <input class="form-control" name="ProductName" [(ngModel)]="product.productName" type="text" />
+              </div>
+              <div class="form-group">
+                <label>Category Name</label>
+                <select class="form-control" name="CategoryName" [(ngModel)]="product.categoryName">
+                  <option *ngfor="let c of categories" value="">{{c}}</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Manufacturer</label>
+                <select class="form-control" name="Manufacturer" [(ngModel)]="product.manufacturer">
+                  <option *ngfor="let m of Manufacturers" value="">{{m}}</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <input class="form-control" name="Description" [(ngModel)]="product.description" type="text" />
+            </div>
+            <div class="form-group">
+              <label>Base Price</label>
+              <input class="form-control" name="BasePrice" [(ngModel)]="product.basePrice" type="text" />
+              <input class="form-control" disabled name="tax" type="text" [value]="tax" />
+            </div>
+            <div class="form-group">
+              <input class="btn btn-warning" (click)="clear()" type="button" value="Clear" />
+              <input class="btn btn-success" (click)="save()" type="button" value="Save" />
+            </div>
+          </form>
+        </div>
+      </td>
+    </tr>
+  </tbody></table>
+  
